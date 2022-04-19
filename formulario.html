@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Recrutamento e seleção</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="name"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+                
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required> 
+            </div>
+        </fieldset> 
+
+        <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual nível de vaga você procura?</strong></label>
+            <label>
+                <input type="radio" name="vaga" value="jovemaprendiz">Jovem Aprendiz
+            </label>
+            <label>
+                <input type="radio" name="vaga" value="estagio">Estágio nível médio
+            </label>
+            <label>
+                <input type="radio" name="vaga" value="nivelsuperior">Estágio nível Superior
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Em qual você já trabalhou antes?</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Nenhuma</option>
+                <option>Jovem Aprendiz</option>
+                <option>Estágio nível médio</option>
+                <option>Estágio nível superior</option>
+            </select>
+         </div>
+
+         <fieldset class="grupo">
+             <div id="check">
+                <label><strong>Selecione as capacitações que possui:</strong></label><br><br>
+                <input type="checkbox" id="cap1" name="cap1" value="Aprendizagem">
+                <label for="cap1">Aprendizagem rápida</label>
+                <input type="checkbox" id="cap2" name="cap2" value="determinacao">
+                <label for="cap2">Determinação</label>
+                <input type="checkbox" id="cap3" name="cap3" value="trabalho">
+                <label for="cap3">Trabalho em equipe</label>
+                <input type="checkbox" id="cap4" name="cap4" value="foco">
+                <label for="cap4">Foco</label>
+            </div>
+         </fieldset>
+
+    <div class="campo">
+        <br>
+        <label><strong>Conte um pouco da sua experiência:</strong></label>
+        <textarea row="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+    </div>
+
+    <button class="botao" type="submit">Concluir</button>
+
+    </form>
+</body>
+</html>
